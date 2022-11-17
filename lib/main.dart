@@ -66,12 +66,12 @@ class _HomePageState extends State<HomePage> {
             controller: _pageController,
             children: <Widget>[
               makePage(
-                  image: 'assets/images/step-one.png',
+                  image: 'assets/images/step-tow.jpg',
                   title: Strings.stepOneTitle,
                   content: Strings.stepOneContent),
               makePage(
                   reverse: true,
-                  image: 'assets/images/step-two.png',
+                  image: 'assets/images/step-one.jpg',
                   title: Strings.stepTwoTitle,
                   content: Strings.stepTwoContent),
               makePage(
@@ -91,8 +91,8 @@ class _HomePageState extends State<HomePage> {
             padding: const EdgeInsets.all(20.0),
             child: InkWell(
               onTap: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => MainPage()));
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => MainScreen()));
               },
               child: Container(
                 height: 50,
